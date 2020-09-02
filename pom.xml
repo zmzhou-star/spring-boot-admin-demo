@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.zmzhou</groupId>
+  <artifactId>spring-boot-admin-demo-parent</artifactId>
+  <version>${version}</version>
+  <packaging>pom</packaging>
+
+  <name>spring-boot-admin-demo</name>
+  <description>管理和监控SpringBoot应用程序demo</description>
+
+  <url>https://github.com/zmzhou-star/spring-boot-admin-demo</url>
+  <inceptionYear>2020</inceptionYear>
+
+  <properties>
+    <version>1.0</version>
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <distributionManagement>
+    <site>
+      <id>website</id>
+      <url>https://github.com/zmzhou-star/spring-boot-admin-demo</url>
+    </site>
+    <repository>
+      <id>github</id>
+      <name>GitHub zmzhou-star Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/zmzhou-star/spring-boot-admin-demo</url>
+    </repository>
+  </distributionManagement>
+
+</project>

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.137.67:8761/eureka
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    peer-node-read-timeout-ms: 10000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+info:
+  app:
+    name: @project.name@
+    version: @project.version@
+    description: @project.description@
+    spring-boot-version: @project.parent.version@
