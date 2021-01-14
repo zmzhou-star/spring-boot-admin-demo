@@ -1,12 +1,16 @@
 spring:
   application:
-    name: admin-client
+    name: @project.name@
   boot:
     admin:
       client:
         url: http://192.168.137.67:8769/
         username: admin
         password: admin#8769
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
 server:
   port: 8768
 
@@ -19,17 +23,20 @@ management:
     health:
       show-details: ALWAYS
 
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    health-check-url-path: /actuator/health
-  client:
-    registryFetchIntervalSeconds: 5
-    service-url:
-      defaultZone: ${EUREKA_SERVICE_URL:http://192.168.137.67:8761}/eureka/
-info:
-  app:
-    name: @project.name@
-    version: @project.version@
-    description: @project.description@
-    spring-boot-version: @project.parent.version@
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    health-check-url-path: /actuator/health
+#  client:
+#    registryFetchIntervalSeconds: 5
+#    service-url:
+#      defaultZone: ${EUREKA_SERVICE_URL:http://192.168.137.67:8761}/eureka/
+#info:
+#  app:
+#    name: @project.name@
+#    version: @project.version@
+#    description: @project.description@
+#    spring-boot-version: @project.parent.version@
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848

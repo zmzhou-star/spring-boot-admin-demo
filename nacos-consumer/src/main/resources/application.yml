@@ -1,0 +1,11 @@
+server:
+  port: 8668
+  shutdown: graceful
+spring:
+  application:
+    # 注册到nacos上的服务名称
+    name: @project.name@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848

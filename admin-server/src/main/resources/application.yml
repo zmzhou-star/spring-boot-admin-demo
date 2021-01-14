@@ -16,7 +16,7 @@ spring:
       name: admin
       password: admin#8769
   application:
-    name: admin-server
+    name: @project.name@
     admin:
       enabled: true
   devtools:
