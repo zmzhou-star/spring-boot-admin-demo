@@ -6,11 +6,13 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.137.67:8761/eureka
+      defaultZone: http://192.168.163.1:8761/eureka
     register-with-eureka: false
     fetch-registry: false
   server:
     peer-node-read-timeout-ms: 10000
+  instance:
+    prefer-ip-address: true
 management:
   endpoints:
     web:

@@ -32,7 +32,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     service-url:
-      defaultZone: ${EUREKA_SERVICE_URL:http://192.168.137.67:8761}/eureka/
+      defaultZone: ${EUREKA_SERVICE_URL:http://192.168.163.1:8761}/eureka/
     eureka-server-connect-timeout-seconds: 30
     eureka-server-read-timeout-seconds: 30
     eureka-connection-idle-timeout-seconds: 60
